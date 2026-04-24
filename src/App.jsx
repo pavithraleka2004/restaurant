@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './Home.jsx';
 import RecipeDetail from './RecipeDetail.jsx';
 import Recipe from './Recipe.jsx';
@@ -10,7 +10,7 @@ import AboutMe from './AboutMe.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recipes" element={<Recipes />} /> 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
-    </BrowserRouter>
+    
   );
 }
 
